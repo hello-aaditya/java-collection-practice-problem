@@ -147,4 +147,34 @@ public class LinkedListDemo {
 ```
 #### 3. Iterator
 ```java
+package jcf_practice;
+
+import java.util.LinkedList;
+import java.util.Iterator;
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> list = new LinkedList<>();
+
+		// add()
+		list.add(100);
+		list.add(50);
+		list.add(150);
+		list.add(25);
+		list.add(75);
+		list.add(200);
+		list.add(250);
+		list.add(125);
+		list.add(175);
+		list.add(25);
+		list.add(225);
+		
+		// iterator
+		Iterator<Integer> itr = list.iterator();
+		
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
+	}
+}
 ```
