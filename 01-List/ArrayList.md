@@ -127,6 +127,7 @@ public class ArrayListDemo {
 	}
 }
 ```
+#### 3. Iterator
 ```java
 package jcf_practice;
 
