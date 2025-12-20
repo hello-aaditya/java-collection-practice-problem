@@ -66,3 +66,33 @@ public class ArrayListDemo {
 }
 ```
 ## Iteration styles
+#### 1. Classical for-loop
+```java
+package jcf_practice;
+
+import java.util.ArrayList;
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
+
+		// add()
+		list.add(250);
+		list.add(100);
+		list.add(50);
+		list.add(150);
+		list.add(25);
+		list.add(75);
+		list.add(250);
+		list.add(125);
+		list.add(175);
+		list.add(225);
+
+		// classical for loop
+		for(int i=0; i<list.size(); i++) {
+			System.out.print(list.get(i) + " ");
+		}	
+	}
+}
+```
+####  2. 
