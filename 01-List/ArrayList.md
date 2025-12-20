@@ -99,3 +99,31 @@ public class ArrayListDemo {
 }
 ```
 ####  2. Enhanced for-each loop
+```java
+package jcf_practice;
+
+import java.util.ArrayList;
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
+
+		// add()
+		list.add(250);
+		list.add(100);
+		list.add(50);
+		list.add(150);
+		list.add(25);
+		list.add(75);
+		list.add(250);
+		list.add(125);
+		list.add(175);
+		list.add(225);
+
+		// enhanced for-each loop
+		for(int num : list) {
+			System.out.print(num + " ");
+		}	
+	}
+}
+```
