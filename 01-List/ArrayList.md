@@ -66,7 +66,7 @@ public class ArrayListDemo {
 }
 ```
 ## Iteration styles
-1. [Classical for-loop](#1.-Classical-for-loop)
+1. Classical for-loop
 2. Enhanced for-each loop
 3. Iterator
 #### 1. Classical for-loop
