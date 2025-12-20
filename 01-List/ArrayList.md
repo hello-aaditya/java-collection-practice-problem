@@ -36,7 +36,7 @@ public class ArrayListDemo {
 		System.out.println("SIZE OF LIST: " + list.size());
 		
 		// contains()
-		System.out.println("CONTAINS 207: " + list.contains(207));
+		System.out.println("CONTAINS 75: " + list.contains(75));
 		
 		// indexOf()
 		System.out.println("INDEX OF 25: "+ list.indexOf(25));
