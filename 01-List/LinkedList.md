@@ -117,4 +117,32 @@ public class LinkedListDemo {
 ```
 ####  2. Enhanced for-each loop
 ```java
+package jcf_practice;
+
+import java.util.LinkedList;
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> list = new LinkedList<>();
+
+		// add()
+		list.add(100);
+		list.add(50);
+		list.add(150);
+		list.add(25);
+		list.add(75);
+		list.add(200);
+		list.add(250);
+		list.add(125);
+		list.add(175);
+		list.add(25);
+		list.add(225);
+		
+		// enhanced for-loop
+		for(int num : list) {
+			System.out.print(num + " ");
+		}
+	}
+}
 ```
+#### 3. Iterator
