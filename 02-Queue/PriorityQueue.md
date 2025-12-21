@@ -78,12 +78,12 @@ public class PriorityQueueDemo {
 	}
 }
 ```
-####  1. Enhanced for-each loop
+####  2. Iterator
 ```java
 package jcf_practice;
 
 import java.util.PriorityQueue;
-
+import java.util.Iterator;
 public class PriorityQueueDemo {
 
 	public static void main(String[] args) {
@@ -100,9 +100,16 @@ public class PriorityQueueDemo {
 		pq.add(125);
 		pq.add(200);
 		
-		for(int num : pq) {
-			System.out.print(num + " ");
+		
+		Iterator<Integer> itr = pq.iterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
 		}
 	}
 }
+```
+
+## ❌ Null Element Not Allowed
+```java
+
 ```
