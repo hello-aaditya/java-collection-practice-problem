@@ -76,3 +76,7 @@ public class ArrayDequeDemo {
 
 }
 ```
+## Iteration styles
+1. Classical for-loop
+2. Enhanced for-each loop
+3. Iterator
