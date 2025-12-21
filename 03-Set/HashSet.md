@@ -58,3 +58,32 @@ public class HashSetDemo {
 1. Enhanced for-each loop
 2. Iterator
 ####  1. Enhanced for-each loop
+```java
+package jcf_practice;
+
+import java.util.HashSet;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+
+		HashSet<Integer> hs = new HashSet<>();
+
+		// add()
+		hs.add(100);
+		hs.add(50);
+		hs.add(150);
+		hs.add(175);
+		hs.add(25);
+		hs.add(75);
+		hs.add(225);
+		hs.add(125);
+		hs.add(200);
+		
+		for(int num : hs) {
+			System.out.print(num + " ");
+		}
+	}
+}
+```
+####  1. Enhanced for-each loop
