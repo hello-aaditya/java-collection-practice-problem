@@ -86,4 +86,6 @@ public class HashSetDemo {
 	}
 }
 ```
-####  1. Enhanced for-each loop
+#### 2. Iterator
+```java
+```
