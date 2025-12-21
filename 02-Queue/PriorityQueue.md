@@ -19,14 +19,14 @@ public class PriorityQueueDemo {
 		pq.add(225);
 		pq.add(125);
 		pq.add(200);
-		System.out.println("AFTER add(): " + pq);
+		System.out.println("AFTER add(): " + pq); // ❌ Not sorted view
 
 		// offer() -> preferred for queues
 		pq.offer(5);
 		System.out.println("AFTER offer(): " + pq);
 
 		// peek() -> look
-		System.out.println("peek(): " + pq.peek());
+		System.out.println("peek(): " + pq.peek()); // ✔ Smallest element
 
 		// poll() -> pull first element
 		System.out.println("poll(): " + pq.poll());
