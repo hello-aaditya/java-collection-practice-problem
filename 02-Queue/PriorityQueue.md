@@ -47,3 +47,7 @@ public class PriorityQueueDemo {
 	}
 }
 ```
+## Iteration styles
+1. Enhanced for-each loop
+2. Iterator
+####  1. Enhanced for-each loop
