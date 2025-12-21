@@ -111,5 +111,6 @@ public class PriorityQueueDemo {
 
 ## ❌ Null Element Not Allowed
 ```java
-
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+pq.add(null);   // ❌ NullPointerException
 ```
