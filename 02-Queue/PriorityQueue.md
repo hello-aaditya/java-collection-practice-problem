@@ -78,3 +78,31 @@ public class PriorityQueueDemo {
 	}
 }
 ```
+####  1. Enhanced for-each loop
+```java
+package jcf_practice;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueDemo {
+
+	public static void main(String[] args) {
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+		// add()
+		pq.add(100);
+		pq.add(50);
+		pq.add(150);
+		pq.add(175);
+		pq.add(25);
+		pq.add(75);
+		pq.add(225);
+		pq.add(125);
+		pq.add(200);
+		
+		for(int num : pq) {
+			System.out.print(num + " ");
+		}
+	}
+}
+```
