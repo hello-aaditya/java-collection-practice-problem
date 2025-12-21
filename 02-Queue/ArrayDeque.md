@@ -79,3 +79,31 @@ public class ArrayDequeDemo {
 ## Iteration styles
 1. Enhanced for-each loop
 2. Iterator
+####  1. Enhanced for-each loop
+```java
+package jcf_practice;
+
+import java.util.ArrayDeque;
+
+public class ArrayDequeDemo {
+
+	public static void main(String[] args) {
+		ArrayDeque<Integer> dq = new ArrayDeque<>();
+
+		// add() -> adds element at tail
+		dq.add(100);
+		dq.add(50);
+		dq.add(150);
+		dq.add(175);
+		dq.add(25);
+		dq.add(75);
+		dq.add(225);
+		dq.add(125);
+		dq.add(200);
+
+		for(int num : dq) {
+			System.out.print(num + " ");
+		}
+	}
+}
+```
