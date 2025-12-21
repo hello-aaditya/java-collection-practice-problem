@@ -107,3 +107,33 @@ public class ArrayDequeDemo {
 	}
 }
 ```
+####  2. Iterator
+```java
+package jcf_practice;
+
+import java.util.ArrayDeque;
+import java.util.Iterator;
+
+public class ArrayDequeDemo {
+
+	public static void main(String[] args) {
+		ArrayDeque<Integer> dq = new ArrayDeque<>();
+
+		// add() -> adds element at tail
+		dq.add(100);
+		dq.add(50);
+		dq.add(150);
+		dq.add(175);
+		dq.add(25);
+		dq.add(75);
+		dq.add(225);
+		dq.add(125);
+		dq.add(200);
+
+		Iterator itr = dq.iterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
+	}
+}
+```
