@@ -137,3 +137,9 @@ public class ArrayDequeDemo {
 	}
 }
 ```
+
+> ArrayDeque does NOT allow null elements
+
+
+|  `dq.add(null);` // ❌ Runtime Exception   |
+| --------------------------------------- |
