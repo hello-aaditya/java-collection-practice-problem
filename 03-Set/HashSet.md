@@ -20,7 +20,7 @@ public class HashSetDemo {
 		hs.add(225);
 		hs.add(125);
 		hs.add(200);
-		System.out.println("AFTER add(): " + hs);
+		System.out.println("AFTER add(): " + hs); // order may vary
 
 		// duplicate element (ignored)
 		hs.add(75);
@@ -54,3 +54,7 @@ public class HashSetDemo {
 
 }
 ```
+## Iteration styles
+1. Enhanced for-each loop
+2. Iterator
+####  1. Enhanced for-each loop
