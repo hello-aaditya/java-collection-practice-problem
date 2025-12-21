@@ -88,4 +88,31 @@ public class HashSetDemo {
 ```
 #### 2. Iterator
 ```java
+package jcf_practice;
+
+import java.util.HashSet;
+import java.util.Iterator;
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+
+		HashSet<Integer> hs = new HashSet<>();
+
+		// add()
+		hs.add(100);
+		hs.add(50);
+		hs.add(150);
+		hs.add(175);
+		hs.add(25);
+		hs.add(75);
+		hs.add(225);
+		hs.add(125);
+		hs.add(200);
+		
+		Iterator<Integer> itr = hs.iterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
+	}
+}
 ```
