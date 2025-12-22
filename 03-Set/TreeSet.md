@@ -88,3 +88,33 @@ public class TreeSetDemo {
 	}
 }
 ```
+#### 2. Iterator
+```java
+package jcf_practice;
+
+import java.util.TreeSet;
+import java.util.Iterator;
+public class TreeSetDemo {
+
+	public static void main(String[] args) {
+
+		TreeSet<Integer> ts = new TreeSet<>();
+
+		// add()
+		ts.add(100);
+		ts.add(50);
+		ts.add(150);
+		ts.add(175);
+		ts.add(25);
+		ts.add(75);
+		ts.add(225);
+		ts.add(125);
+		ts.add(200);
+		
+		Iterator<Integer> itr = ts.iterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
+	}
+}
+```
