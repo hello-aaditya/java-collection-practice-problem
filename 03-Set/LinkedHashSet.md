@@ -57,3 +57,35 @@ public class LinkedHashSetDemo {
 ## Iteration styles
 1. Enhanced for-each loop
 2. Iterator
+####  1. Enhanced for-each loop
+```java
+package jcf_practice;
+
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetDemo {
+
+	public static void main(String[] args) {
+
+		LinkedHashSet<Integer> lhs = new LinkedHashSet<>();
+
+		// add()
+		lhs.add(100);
+		lhs.add(50);
+		lhs.add(150);
+		lhs.add(175);
+		lhs.add(25);
+		lhs.add(75);
+		lhs.add(225);
+		lhs.add(125);
+		lhs.add(200);
+		lhs.add(null);
+		System.out.println("AFTER add(): " + lhs);
+		
+		for(Integer num : lhs) {
+			System.out.print(num + " ");
+		}
+	}
+
+}
+```
