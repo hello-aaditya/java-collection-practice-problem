@@ -60,7 +60,7 @@
 
 | S No. | Problem Name                                   | LeetCode Link                                                                                                                   | Core JCF Concept                | Solution                                                |
 | ----- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
-| 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | HashMap – fast lookup           | [View](#Two-Sum)                                        |
+| 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | HashMap – fast lookup           | [View](##Two-Sum)                                       |
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                         | HashSet – uniqueness            | [View](#contains-duplicate)                             |
 | 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | HashMap – frequency count       | [View](#valid-anagram)                                  |
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#group-anagrams)                                 |
@@ -110,7 +110,7 @@
 | 48    | Employee Importance                            | [Employee Importance](https://leetcode.com/problems/employee-importance/)                                                       | Graph traversal                 | [View](#employee-importance)                            |
 | 49    | Insert Delete GetRandom O(1)                   | [Randomized Set](https://leetcode.com/problems/insert-delete-getrandom-o1/)                                                     | HashMap + List                  | [View](#insert-delete-getrandom-o1)                     |
 | 50    | Design Twitter                                 | [Design Twitter](https://leetcode.com/problems/design-twitter/)                                                                 | HashMap + Heap                  | [View](#design-twitter)                                 |
-## Two Sum
+## 1
 ```java
 import java.util.Scanner;
 ```
