@@ -186,16 +186,12 @@ class Solution {
     }
 }
 ```
+# 4-Group-Anagrams
 
 
+Iterate over key and value of a HashMap
 ```java
-```
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " -> " + entry.getValue());
 }
-
-// check whether it is present or not
-
-// insert the value inside map
-
-// if value inside map becomes 0 then remove it.
+```
