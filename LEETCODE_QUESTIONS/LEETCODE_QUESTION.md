@@ -1,3 +1,9 @@
+## Table-1: JCF Practice Table (No Hints)
+
+> **Rule for you:**  
+> 👉 Try solving using only this table.  
+> 👉 Click the **Hint Table link** _only if stuck_.
+
 | S No. | Problem Name | LeetCode Link | Hint Table |
 |------|--------------|---------------|------------|
 | 1 | Two Sum | https://leetcode.com/problems/two-sum/ | [[#table2-1]] |
