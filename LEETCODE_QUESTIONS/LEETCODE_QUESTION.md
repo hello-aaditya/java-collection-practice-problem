@@ -7,7 +7,7 @@
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            | ✔️           |
 | 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      | ✔️           |
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                    | ✔️           |
-| 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)        |              |
+| 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)        | ✔️           |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |              |
 | 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                |              |
 | 8     | Subarray Sum Equals K                          | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                      |              |
@@ -215,7 +215,7 @@ class Solution {
     }
 }
 ```
-
+# 5-First-Uniqu-Character-in-a-String
 # Iterate over key and value of a HashMap
 ```java
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
