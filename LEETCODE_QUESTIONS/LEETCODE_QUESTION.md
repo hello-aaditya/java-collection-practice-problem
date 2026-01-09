@@ -154,4 +154,8 @@ for (Map.Entry<Character, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " -> " + entry.getValue());
 }
 
-// check whether i
+// check whether it is present or not
+
+// insert the value inside map
+
+// if value inside map becomes 0 then remove it.
