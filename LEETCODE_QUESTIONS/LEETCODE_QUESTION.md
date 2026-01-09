@@ -60,7 +60,7 @@
 | ----- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
 | 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | HashMap – fast lookup           | [View](#1-Two-Sum)                                      |
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                         | HashSet – uniqueness            | [View](#2-contains-duplicate)                           |
-| 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | HashMap – frequency count       | [View](#valid-anagram)                                  |
+| 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | HashMap – frequency count       | [View](#3-valid-anagram)                                |
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#group-anagrams)                                 |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)                                     | LinkedHashMap – insertion order | [View](#first-unique-character-in-a-string)             |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | HashMap + PriorityQueue         | [View](#top-k-frequent-elements)                        |
@@ -146,4 +146,7 @@ class Solution {
         return false;
     }
 }
+```
+# 3-Valid-Anagram
+```java
 ```
