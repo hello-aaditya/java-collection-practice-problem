@@ -9,7 +9,7 @@
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                    | ✔️           |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)        | ✔️           |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |              |
-| 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                |              |
+| 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                | ✔️           |
 | 8     | Subarray Sum Equals K                          | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                      |              |
 | 9     | Longest Substring Without Repeating Characters | [Longest Substring](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |              |
 | 10    | Intersection of Two Arrays                     | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)            |              |
@@ -238,6 +238,21 @@ class Solution {
     }
 }
 ```
+# Majority Element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Iterate over key and value of a HashMap
 ```java
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
