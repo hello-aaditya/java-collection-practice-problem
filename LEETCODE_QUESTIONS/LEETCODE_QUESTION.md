@@ -64,7 +64,7 @@
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#4-group-anagrams)                               |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)                                     | LinkedHashMap – insertion order | [View](#5-first-unique-character-in-a-string)           |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | HashMap + PriorityQueue         | [View](#top-k-frequent-elements)                        |
-| 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                                             | HashMap – counting              | [View](#majority-element)                               |
+| 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                                             | HashMap – counting              | [View](#7-majority-element)                             |
 | 8     | Subarray Sum Equals K                          | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                                                   | HashMap – prefix sum            | [View](#subarray-sum-equals-k)                          |
 | 9     | Longest Substring Without Repeating Characters | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window + Set/Map        | [View](#longest-substring-without-repeating-characters) |
 | 10    | Intersection of Two Arrays                     | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                                         | HashSet – intersection          | [View](#intersection-of-two-arrays)                     |
@@ -238,7 +238,26 @@ class Solution {
     }
 }
 ```
-# Majority Element
+# 7-Majority-Element
+```java
+class Solution {
+    public int majorityElement(int[] nums) {
+        int size = nums.length;
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int number : nums) {
+            map.put(number, map.getOrDefault(number, 0) + 1);
+        }
+
+        for (int key : map.keySet()) {
+            if (map.get(key) > (size/2)) {
+                return key;
+            }
+        }
+        return -1;
+    }
+}
+```
 
 
 
