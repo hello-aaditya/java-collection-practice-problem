@@ -1,8 +1,5 @@
-## Table-1: JCF Practice Table (No Hints)
-
-> **Rule for you:**  
-> 👉 Try solving using only this table.  
-> 👉 Click the **Hint Table link** _only if stuck_.
+## Table-1: JCF Practice Table (No Hints)  
+> 👉 **Try solving using only this table.**
 
 | S No. | Problem Name                                   | LeetCode Link                                                                                      |
 | ----- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------- |
