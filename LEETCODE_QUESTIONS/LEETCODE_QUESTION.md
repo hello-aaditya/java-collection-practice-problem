@@ -150,3 +150,6 @@ class Solution {
 # 3-Valid-Anagram
 ```java
 ```
+for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " -> " + entry.getValue());
+}
