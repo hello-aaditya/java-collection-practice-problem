@@ -149,6 +149,46 @@ class Solution {
 ```
 # 3-Valid-Anagram
 ```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        int size1 = s.length();
+        int size2 = t.length();
+
+        // IF SIZE OF BOTH STRINGS ARE DIFFERENT
+        if (size1 != size2) {
+            return false;
+        }
+
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        // STORE EVERY CHARCATERS OF STRING 's' INTO HASHMAP
+        for (char ch : s.toCharArray()) {
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        // REMOVE EVERY CHARCETRES OF STRING 't' FRM HASHMAP
+        for (char ch : t.toCharArray()) {
+
+            // IF ANY CHARACTER OF STRING 't' IS NOT PRESENT IN ANY MOMENT -> UNVALID ANAGRAM
+            if (!map.containsKey(ch)) {
+                return false;
+            }
+
+            // IF ANY CHARACTER OF STRING 't' IS PRESENT, THEN REDUCE IT BY 1
+            map.put(ch, map.get(ch) - 1);
+
+            // IF ANY FREQUENCY OF ANY CHARCATER IN MAP GETS '0', THEN REMOVE IT.
+            if (map.get(ch) == 0) {
+                map.remove(ch);
+            }
+        }
+        return true;
+    }
+}
+```
+
+
+```java
 ```
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " -> " + entry.getValue());
