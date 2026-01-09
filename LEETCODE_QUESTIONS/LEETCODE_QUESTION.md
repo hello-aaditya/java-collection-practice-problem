@@ -112,5 +112,5 @@
 | 50    | Design Twitter                                 | [Design Twitter](https://leetcode.com/problems/design-twitter/)                                                                 | HashMap + Heap                  | [View](#design-twitter)                                 |
 ## Two Sum
 ```java
-import java.util.Scan
+import java.util.Scanner;
 ```
