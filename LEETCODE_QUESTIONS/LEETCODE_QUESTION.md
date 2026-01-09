@@ -6,7 +6,7 @@
 | 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                  | ✔️           |
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            | ✔️           |
 | 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      | ✔️           |
-| 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                    |              |
+| 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                    | ✔️           |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)        |              |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |              |
 | 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                |              |
@@ -187,7 +187,34 @@ class Solution {
 }
 ```
 # 4-Group-Anagrams
+```java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        HashMap<String, List<String>> map = new HashMap();
 
+        for (String str : strs) {
+
+            // 1. CREATING 'key' FOR map
+            // A. CONVERT THE PRESENT WORD INTO CHARACTER ARRAY
+            char[] charArray = str.toCharArray();
+
+            // B. SORT THEM ALPHABETICALLY
+            Arrays.sort(charArray);
+
+            // C. RECREATE THE SORTED CHARCTER ARRAY INTO STRING
+            String key = new String(charArray);
+
+            // 2. INSERT 'key' IF NOT PRESENT AND CREATE A NEW ARRAYLIST (that contains the grouped anagrams)
+            map.putIfAbsent(key, new ArrayList<>());
+
+            // A. INSIDE ARRAYLIST INSERT THE CURRENT WORD.
+            map.get(key).add(str);
+        }
+
+        return new ArrayList<>(map.values());        
+    }
+}
+```
 
 # Iterate over key and value of a HashMap
 ```java
