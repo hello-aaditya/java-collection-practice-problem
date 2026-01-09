@@ -219,7 +219,7 @@ class Solution {
 ```java
 class Solution {
     public int firstUniqChar(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
+        LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
 
         // INSERT ALL CHARCATERS FROM STRING 's' TO HASHMAP
         char[] charArray = s.toCharArray();
@@ -229,9 +229,9 @@ class Solution {
         }
 
         // ITERATE OVER EACH CHARCATERS FROM STRING AND FIND IT'S FREQUENCY = 1 IN MAP
-        for (int i=0; i<charArray.length; i++) {
-            if (map.get(charArray[i]) == 1) {
-                return i;
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                return s.indexOf(entry.getKey());
             }
         }
         return -1;
