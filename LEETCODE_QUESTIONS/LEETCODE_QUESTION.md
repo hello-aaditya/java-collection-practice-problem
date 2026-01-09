@@ -62,7 +62,7 @@
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                         | HashSet – uniqueness            | [View](#2-contains-duplicate)                           |
 | 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | HashMap – frequency count       | [View](#3-valid-anagram)                                |
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#4-group-anagrams)                               |
-| 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)                                     | LinkedHashMap – insertion order | [View](#first-unique-character-in-a-string)             |
+| 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)                                     | LinkedHashMap – insertion order | [View](#5-first-unique-character-in-a-string)           |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | HashMap + PriorityQueue         | [View](#top-k-frequent-elements)                        |
 | 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                                             | HashMap – counting              | [View](#majority-element)                               |
 | 8     | Subarray Sum Equals K                          | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                                                   | HashMap – prefix sum            | [View](#subarray-sum-equals-k)                          |
@@ -215,7 +215,29 @@ class Solution {
     }
 }
 ```
-# 5-First-Uniqu-Character-in-a-String
+# 5-First-Unique-Character-in-a-String
+```java
+class Solution {
+    public int firstUniqChar(String s) {
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        // INSERT ALL CHARCATERS FROM STRING 's' TO HASHMAP
+        char[] charArray = s.toCharArray();
+
+        for (char ch : charArray) {
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        // ITERATE OVER EACH CHARCATERS FROM STRING AND FIND IT'S FREQUENCY = 1 IN MAP
+        for (int i=0; i<charArray.length; i++) {
+            if (map.get(charArray[i]) == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+```
 # Iterate over key and value of a HashMap
 ```java
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
