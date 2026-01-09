@@ -110,5 +110,23 @@
 | 50    | Design Twitter                                 | [Design Twitter](https://leetcode.com/problems/design-twitter/)                                                                 | HashMap + Heap                  | [View](#design-twitter)                                 |
 # 1-Two-Sum
 ```java
-import java.util.Scanner;
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int i=0; i<nums.length; i++) {
+            int operand1 = nums[i];
+
+            int operand2 = target - operand1;
+
+            if (map.containsKey(operand2)) {
+                return new int[] {map.get(operand2), i};
+            }
+
+            map.put(operand1, i);
+        }
+        return new int[] {-1, -1};
+    }
+}
 ```
+# 1-Two-Sum
