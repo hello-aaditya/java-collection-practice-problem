@@ -5,7 +5,7 @@
 | ----- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------ |
 | 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                  | ✔️           |
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            | ✔️           |
-| 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      |              |
+| 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      | ✔️           |
 | 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                    |              |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)        |              |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |              |
@@ -61,7 +61,7 @@
 | 1     | Two Sum                                        | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | HashMap – fast lookup           | [View](#1-Two-Sum)                                      |
 | 2     | Contains Duplicate                             | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                         | HashSet – uniqueness            | [View](#2-contains-duplicate)                           |
 | 3     | Valid Anagram                                  | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                   | HashMap – frequency count       | [View](#3-valid-anagram)                                |
-| 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#group-anagrams)                                 |
+| 4     | Group Anagrams                                 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                                 | HashMap<String, List>           | [View](#4-group-anagrams)                               |
 | 5     | First Unique Character in a String             | [First Unique Character](https://leetcode.com/problems/first-unique-character-in-a-string/)                                     | LinkedHashMap – insertion order | [View](#first-unique-character-in-a-string)             |
 | 6     | Top K Frequent Elements                        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | HashMap + PriorityQueue         | [View](#top-k-frequent-elements)                        |
 | 7     | Majority Element                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                                             | HashMap – counting              | [View](#majority-element)                               |
@@ -189,7 +189,7 @@ class Solution {
 # 4-Group-Anagrams
 
 
-Iterate over key and value of a HashMap
+# Iterate over key and value of a HashMap
 ```java
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " -> " + entry.getValue());
