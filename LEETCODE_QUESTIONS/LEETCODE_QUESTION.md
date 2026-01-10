@@ -220,15 +220,11 @@ class Solution {
 class Solution {
     public int firstUniqChar(String s) {
         LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
-
-        // INSERT ALL CHARCATERS FROM STRING 's' TO HASHMAP
-        char[] charArray = s.toCharArray();
-
-        for (char ch : charArray) {
+        for (char ch : s.toCharArray()) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
 
-        // ITERATE OVER EACH CHARCATERS FROM STRING AND FIND IT'S FREQUENCY = 1 IN MAP
+        // ITERATE OVER THE LINKEDHASHMAP TO FIND THE OCCURRENCE OF FIRST CHARACTER WHOSE FREQUENCY = 1
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             if (entry.getValue() == 1) {
                 return s.indexOf(entry.getKey());
